@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		542B714024540D0200E73108 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542B713F24540D0200E73108 /* AppDelegate.swift */; };
-		542B714524540D0200E73108 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542B714324540D0200E73108 /* Main.storyboard */; };
 		542B714724540D0400E73108 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 542B714624540D0400E73108 /* Assets.xcassets */; };
 		542B714A24540D0400E73108 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542B714824540D0400E73108 /* LaunchScreen.storyboard */; };
 		542B715524540D0400E73108 /* LMANotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542B715424540D0400E73108 /* LMANotesTests.swift */; };
@@ -16,6 +15,7 @@
 		9218D850247B67A70005A1F0 /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9218D84F247B67A70005A1F0 /* AddNoteViewController.swift */; };
 		92683DFA24710C7B00E60338 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92683DF824710C7B00E60338 /* NoteCell.swift */; };
 		92683DFB24710C7B00E60338 /* NoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92683DF924710C7B00E60338 /* NoteCell.xib */; };
+		92C8473F24813379005D3EB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C8473E24813379005D3EB3 /* Main.storyboard */; };
 		92E93DD324695DF400EC5831 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E93DD224695DF400EC5831 /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +32,6 @@
 /* Begin PBXFileReference section */
 		542B713C24540D0200E73108 /* LMANotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LMANotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		542B713F24540D0200E73108 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		542B714424540D0200E73108 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		542B714624540D0400E73108 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		542B714924540D0400E73108 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		542B714B24540D0400E73108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,6 +42,7 @@
 		9218D84F247B67A70005A1F0 /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
 		92683DF824710C7B00E60338 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 		92683DF924710C7B00E60338 /* NoteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteCell.xib; sourceTree = "<group>"; };
+		92C8473E24813379005D3EB3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		92E93DD224695DF400EC5831 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,7 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				542B713F24540D0200E73108 /* AppDelegate.swift */,
-				542B714324540D0200E73108 /* Main.storyboard */,
+				92C8473E24813379005D3EB3 /* Main.storyboard */,
 				542B714624540D0400E73108 /* Assets.xcassets */,
 				542B714824540D0400E73108 /* LaunchScreen.storyboard */,
 				542B714B24540D0400E73108 /* Info.plist */,
@@ -190,10 +190,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				92683DFB24710C7B00E60338 /* NoteCell.xib in Resources */,
+				92C8473F24813379005D3EB3 /* Main.storyboard in Resources */,
 				92E93DD324695DF400EC5831 /* Login.storyboard in Resources */,
 				542B714A24540D0400E73108 /* LaunchScreen.storyboard in Resources */,
 				542B714724540D0400E73108 /* Assets.xcassets in Resources */,
-				542B714524540D0200E73108 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,14 +237,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		542B714324540D0200E73108 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				542B714424540D0200E73108 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		542B714824540D0400E73108 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
