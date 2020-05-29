@@ -13,6 +13,7 @@
 		542B714A24540D0400E73108 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542B714824540D0400E73108 /* LaunchScreen.storyboard */; };
 		542B715524540D0400E73108 /* LMANotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542B715424540D0400E73108 /* LMANotesTests.swift */; };
 		920A89EB2466913A00CA3D0B /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920A89EA2466913A00CA3D0B /* NotesViewController.swift */; };
+		9218D850247B67A70005A1F0 /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9218D84F247B67A70005A1F0 /* AddNoteViewController.swift */; };
 		92683DFA24710C7B00E60338 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92683DF824710C7B00E60338 /* NoteCell.swift */; };
 		92683DFB24710C7B00E60338 /* NoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92683DF924710C7B00E60338 /* NoteCell.xib */; };
 		92E93DD324695DF400EC5831 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E93DD224695DF400EC5831 /* Login.storyboard */; };
@@ -39,6 +40,7 @@
 		542B715424540D0400E73108 /* LMANotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMANotesTests.swift; sourceTree = "<group>"; };
 		542B715624540D0400E73108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		920A89EA2466913A00CA3D0B /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		9218D84F247B67A70005A1F0 /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
 		92683DF824710C7B00E60338 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 		92683DF924710C7B00E60338 /* NoteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteCell.xib; sourceTree = "<group>"; };
 		92E93DD224695DF400EC5831 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				92E93DD224695DF400EC5831 /* Login.storyboard */,
 				92683DF824710C7B00E60338 /* NoteCell.swift */,
 				92683DF924710C7B00E60338 /* NoteCell.xib */,
+				9218D84F247B67A70005A1F0 /* AddNoteViewController.swift */,
 			);
 			path = LMANotes;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9218D850247B67A70005A1F0 /* AddNoteViewController.swift in Sources */,
 				92683DFA24710C7B00E60338 /* NoteCell.swift in Sources */,
 				542B714024540D0200E73108 /* AppDelegate.swift in Sources */,
 				920A89EB2466913A00CA3D0B /* NotesViewController.swift in Sources */,

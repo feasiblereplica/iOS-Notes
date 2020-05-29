@@ -29,6 +29,10 @@ class NotesViewController: UIViewController {
         tableView.register(nib, forCellReuseIdentifier: NoteCell.cellId)
     }
     
+    @IBAction func didTapAddButton(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "SEGUE_ADD_NOTE_SCENE", sender: nil)
+    }
+    
 }
 
 
