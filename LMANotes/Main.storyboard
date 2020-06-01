@@ -30,7 +30,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KBC-xR-2po"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Notes" id="715-Lr-msv"/>
+                    <navigationItem key="navigationItem" title="Notes" id="715-Lr-msv">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="JXx-0R-0qX">
+                            <connections>
+                                <segue destination="WXD-5v-5OV" kind="show" id="JvW-94-P7Q"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="gu5-h5-Kd5" id="QeF-7C-rum"/>
                     </connections>
@@ -60,7 +66,7 @@
         <!--Add Note-->
         <scene sceneID="M2S-M4-vQw">
             <objects>
-                <viewController id="qjm-j2-UNK" sceneMemberID="viewController">
+                <viewController id="qjm-j2-UNK" customClass="AddNoteViewController" customModule="LMANotes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="anz-Dy-1HL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,7 +109,22 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FZC-AX-WiF"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Add Note" id="ptd-d0-dMq"/>
+                    <navigationItem key="navigationItem" title="Add Note" id="ptd-d0-dMq">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="0K5-PN-ve5">
+                            <connections>
+                                <action selector="didTapCancelButton:" destination="qjm-j2-UNK" id="2Wo-tm-c0h"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="LMh-nE-uQU">
+                            <connections>
+                                <action selector="didTapDoneButton:" destination="qjm-j2-UNK" id="QlB-4R-tUC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="contentTextView" destination="u2G-Cj-lOW" id="TMw-C9-YRb"/>
+                        <outlet property="titleTextField" destination="LmM-ar-Adb" id="06O-i1-rPM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y6t-4E-Ryw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -114,6 +135,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WXD-5v-5OV" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="NX7-cy-bds"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fc1-Mi-rBw">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
