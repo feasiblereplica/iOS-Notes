@@ -29,10 +29,6 @@ class NotesViewController: UIViewController {
         tableView.register(nib, forCellReuseIdentifier: NoteCell.cellId)
     }
     
-    @IBAction func didTapAddButton(_ sender: UIBarButtonItem) {
-        performSegue(withIdentifier: "SEGUE_ADD_NOTE_SCENE", sender: nil)
-    }
-    
 }
 
 
@@ -59,6 +55,10 @@ extension NotesViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return NoteCell.cellHeight
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "SEGUE_NOTE_DETAIL", sender: nil)
     }
     
 }
