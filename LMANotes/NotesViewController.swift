@@ -29,6 +29,16 @@ class NotesViewController: UIViewController {
         tableView.register(nib, forCellReuseIdentifier: NoteCell.cellId)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "SEGUE_NOTE_DETAIL" {
+            if let destinationViewController = segue.destination as? NoteDetailViewController {
+                if let contentText = sender as? String {
+                    destinationViewController.contentText = contentText
+                }
+            }
+        }
+    }
+    
 }
 
 
@@ -58,7 +68,8 @@ extension NotesViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "SEGUE_NOTE_DETAIL", sender: nil)
+        let contentText = "my content at row \(indexPath.row)"
+        performSegue(withIdentifier: "SEGUE_NOTE_DETAIL", sender: contentText)
     }
     
 }

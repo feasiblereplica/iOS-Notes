@@ -16,6 +16,7 @@
 		92683DFB24710C7B00E60338 /* NoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92683DF924710C7B00E60338 /* NoteCell.xib */; };
 		92C8473F24813379005D3EB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C8473E24813379005D3EB3 /* Main.storyboard */; };
 		92C84741248145C7005D3EB3 /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C84740248145C7005D3EB3 /* AddNoteViewController.swift */; };
+		92D8AFD02493BB99007A630A /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D8AFCF2493BB99007A630A /* NoteDetailViewController.swift */; };
 		92E93DD324695DF400EC5831 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E93DD224695DF400EC5831 /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		92683DF924710C7B00E60338 /* NoteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteCell.xib; sourceTree = "<group>"; };
 		92C8473E24813379005D3EB3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		92C84740248145C7005D3EB3 /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
+		92D8AFCF2493BB99007A630A /* NoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
 		92E93DD224695DF400EC5831 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 				92683DF824710C7B00E60338 /* NoteCell.swift */,
 				92683DF924710C7B00E60338 /* NoteCell.xib */,
 				92C84740248145C7005D3EB3 /* AddNoteViewController.swift */,
+				92D8AFCF2493BB99007A630A /* NoteDetailViewController.swift */,
 			);
 			path = LMANotes;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			files = (
 				92C84741248145C7005D3EB3 /* AddNoteViewController.swift in Sources */,
 				92683DFA24710C7B00E60338 /* NoteCell.swift in Sources */,
+				92D8AFD02493BB99007A630A /* NoteDetailViewController.swift in Sources */,
 				542B714024540D0200E73108 /* AppDelegate.swift in Sources */,
 				920A89EB2466913A00CA3D0B /* NotesViewController.swift in Sources */,
 			);
