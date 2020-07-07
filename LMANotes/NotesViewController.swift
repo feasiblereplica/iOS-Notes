@@ -8,8 +8,21 @@
 
 import UIKit
 
+struct Note {
+    let title: String
+    let content: String
+}
+
 class NotesViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
+    
+    var notes = [
+        Note(title: "iOS Learning", content: "I have to mastering tableView"),
+        Note(title: "Groceries", content: "Apple, Banana, Oil, Meat, 7 PM."),
+        Note(title: "Basic Programming", content: "variables, data types, if-else, array, loop, fuctions"),
+        Note(title: "iOS UI Architecture", content: "MVC, MVVM, MVP, VIPER, etc."),
+        Note(title: "Swift UI Building", content: "Storyboard, UIKit Swift Programmatic UI, SwiftUI")
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,9 +44,9 @@ class NotesViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "SEGUE_NOTE_DETAIL" {
-            if let destinationViewController = segue.destination as? NoteDetailViewController {
-                if let contentText = sender as? String {
-                    destinationViewController.contentText = contentText
+            if let viewController = segue.destination as? NoteDetailViewController {
+                if let note = sender as? Note {
+                    viewController.note = note
                 }
             }
         }
@@ -47,13 +60,14 @@ class NotesViewController: UIViewController {
 extension NotesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 15
+        return notes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: NoteCell.cellId, for: indexPath) as! NoteCell
-        cell.titleLabel?.text = "Title at row \(indexPath.row)"
-        cell.contentLabel?.text = "Content at row \(indexPath.row)"
+        let note = notes[indexPath.row]
+        cell.titleLabel?.text = note.title
+        cell.contentLabel?.text = note.content
         return cell
     }
     
@@ -68,8 +82,8 @@ extension NotesViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let contentText = "my content at row \(indexPath.row)"
-        performSegue(withIdentifier: "SEGUE_NOTE_DETAIL", sender: contentText)
+        let note = notes[indexPath.row]
+        performSegue(withIdentifier: "SEGUE_NOTE_DETAIL", sender: note)
     }
     
 }

@@ -9,13 +9,15 @@
 import UIKit
 
 class NoteDetailViewController: UIViewController {
-    var contentText: String?
+    var note: Note?
 
     @IBOutlet weak private var contentTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        contentTextView.text = contentText
+        
+        title = note?.title
+        contentTextView.text = note?.content
     }
   
 }
