@@ -86,4 +86,11 @@ extension NotesViewController: UITableViewDelegate {
         performSegue(withIdentifier: "SEGUE_NOTE_DETAIL", sender: note)
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            notes.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
+    
 }
